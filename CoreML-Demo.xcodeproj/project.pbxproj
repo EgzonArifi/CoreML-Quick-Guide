@@ -13,6 +13,7 @@
 		77ADA1481F5DCE220028F362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77ADA1471F5DCE220028F362 /* Assets.xcassets */; };
 		77ADA14B1F5DCE220028F362 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ADA1491F5DCE220028F362 /* LaunchScreen.storyboard */; };
 		77ADA1531F5DCE6E0028F362 /* FlowersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ADA1521F5DCE6E0028F362 /* FlowersController.swift */; };
+		77ADA1551F5DD2040028F362 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 77ADA1541F5DD2040028F362 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		77ADA14A1F5DCE220028F362 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77ADA14C1F5DCE220028F362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77ADA1521F5DCE6E0028F362 /* FlowersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersController.swift; sourceTree = "<group>"; };
+		77ADA1541F5DD2040028F362 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../Desktop/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		77ADA13F1F5DCE220028F362 /* CoreML-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				77ADA1541F5DD2040028F362 /* Inceptionv3.mlmodel */,
 				77ADA1401F5DCE220028F362 /* AppDelegate.swift */,
 				77ADA1421F5DCE220028F362 /* InceptionController.swift */,
 				77ADA1521F5DCE6E0028F362 /* FlowersController.swift */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77ADA1531F5DCE6E0028F362 /* FlowersController.swift in Sources */,
+				77ADA1551F5DD2040028F362 /* Inceptionv3.mlmodel in Sources */,
 				77ADA1431F5DCE220028F362 /* InceptionController.swift in Sources */,
 				77ADA1411F5DCE220028F362 /* AppDelegate.swift in Sources */,
 			);

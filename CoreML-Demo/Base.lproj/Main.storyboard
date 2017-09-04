@@ -29,7 +29,7 @@
             </objects>
             <point key="canvasLocation" x="1150" y="403"/>
         </scene>
-        <!--Inception Controller-->
+        <!--Inception V3-->
         <scene sceneID="aag-La-kA6">
             <objects>
                 <viewController id="OF6-lR-qJU" customClass="InceptionController" customModule="CoreML_Demo" customModuleProvider="target" sceneMemberID="viewController">
@@ -40,15 +40,47 @@
                     <view key="view" contentMode="scaleToFill" id="0WG-Zh-fof">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-4p-7EN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose an image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9m-5h-R6l">
+                                <rect key="frame" x="0.0" y="64" width="375" height="61"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40113779362416108" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="f70-BL-MdB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AuL-4p-7EN" firstAttribute="top" secondItem="9cK-HZ-uZd" secondAttribute="bottom" id="8fV-Vh-p0w"/>
+                            <constraint firstItem="J9m-5h-R6l" firstAttribute="top" secondItem="9cK-HZ-uZd" secondAttribute="bottom" id="AqQ-Lh-Ku3"/>
+                            <constraint firstItem="iXo-I0-EGA" firstAttribute="top" secondItem="AuL-4p-7EN" secondAttribute="bottom" id="AzG-ci-YV9"/>
+                            <constraint firstItem="J9m-5h-R6l" firstAttribute="leading" secondItem="0WG-Zh-fof" secondAttribute="leading" id="JeP-1s-I0Y"/>
+                            <constraint firstItem="AuL-4p-7EN" firstAttribute="leading" secondItem="0WG-Zh-fof" secondAttribute="leading" id="UHQ-6E-06J"/>
+                            <constraint firstAttribute="trailing" secondItem="J9m-5h-R6l" secondAttribute="trailing" id="urm-ob-yTM"/>
+                            <constraint firstAttribute="trailing" secondItem="AuL-4p-7EN" secondAttribute="trailing" id="wel-KY-yw7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iNY-Tv-8r2">
-                        <barButtonItem key="rightBarButtonItem" title="Library" id="Uff-WN-Mj8"/>
+                    <navigationItem key="navigationItem" title="Inception V3" id="iNY-Tv-8r2">
+                        <barButtonItem key="rightBarButtonItem" title="Library" id="Uff-WN-Mj8">
+                            <connections>
+                                <action selector="openLibrary:" destination="OF6-lR-qJU" id="B8V-YM-isU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="classifier" destination="J9m-5h-R6l" id="KbQ-My-c7A"/>
+                        <outlet property="imageView" destination="AuL-4p-7EN" id="vd5-oA-l6d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xy-Vx-kEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="-252"/>
+            <point key="canvasLocation" x="1149.5999999999999" y="-252.32383808095955"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bIu-XV-lhb">
